@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "agenticom": {
+      "type": "http",
+      "url": "https://agenticom.app/mcp"
+    }
+  }
+}

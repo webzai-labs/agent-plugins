@@ -1,0 +1,101 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agenticom",
+  "version": "1.0.0",
+  "description": "Publish, read and share planning specs on agenticom — pages composed of the planning kit, versioned and reviewed in the open.",
+  "author": {
+    "name": "Amir Gabay",
+    "email": "support@agenticom.app",
+    "url": "https://agenticom.app"
+  },
+  "homepage": "https://agenticom.app/docs/connecting-to-agenticom",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/agenticom/SKILL.md",
+      "interface": {
+        "displayName": "Agenticom",
+        "shortDescription": "Publish and share specs",
+        "longDescription": "agenticom hosts the specs a planning session produces — pages composed of the planning kit's components — as versioned artifacts with reviews and comments. This plugin connects the agent to the agenticom MCP server as the signed-in person, so it can read the publishing flow and the kit's documentation, upload a draft and see what the build checked, publish it as the next version, and read and manage the projects, workspaces and artifacts the person can reach.",
+        "developerName": "Amir Gabay",
+        "category": "Productivity",
+        "capabilities": [
+          "Read the publishing flow and the kit documentation",
+          "Upload a spec draft and see what the build checked",
+          "Publish a draft as the next version",
+          "Read specs, versions, reviews and comments",
+          "Manage projects, workspaces and members"
+        ],
+        "websiteURL": "https://agenticom.app",
+        "supportURL": "https://agenticom.app/contact",
+        "privacyPolicyURL": "https://agenticom.app/privacy",
+        "termsOfServiceURL": "https://agenticom.app/terms",
+        "defaultPrompt": [
+          "Publish this spec to agenticom as a draft.",
+          "List the specs in my agenticom home.",
+          "What changed in the latest version of this agenticom spec?"
+        ],
+        "brandColor": "#3967DF",
+        "brandColorDark": "#3967DF",
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Who am I",
+              "prompt": "Which agenticom account am I connected as?",
+              "tools_triggered": "who_am_i",
+              "expected_behavior": "Answers with the signed-in person's name and email."
+            },
+            {
+              "description": "List my specs",
+              "prompt": "List my specs on agenticom.",
+              "tools_triggered": "list_workspaces, list_my_artifacts",
+              "expected_behavior": "Lists the specs the person owns, most recently updated first."
+            },
+            {
+              "description": "Read the publishing flow",
+              "prompt": "How do I publish a spec on agenticom?",
+              "tools_triggered": "get_docs",
+              "expected_behavior": "Reads the publishing-on-agenticom topic and explains the draft, check and promote steps."
+            },
+            {
+              "description": "Read a spec",
+              "prompt": "Open my agenticom spec called Onboarding and summarise it.",
+              "tools_triggered": "list_my_artifacts, read_artifact",
+              "expected_behavior": "Finds the spec and summarises its latest version."
+            },
+            {
+              "description": "Upload a draft",
+              "prompt": "Upload this spec to agenticom as a draft.",
+              "tools_triggered": "get_docs, upload_draft",
+              "expected_behavior": "Uploads the source and reports the build's answer: the failed checks, or a private draft link."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unrelated request",
+              "prompt": "What's the weather in Tel Aviv tomorrow?"
+            },
+            {
+              "description": "Generic writing request",
+              "prompt": "Write me a poem about autumn."
+            },
+            {
+              "description": "A different product's documents",
+              "prompt": "Show me my Google Docs from last week."
+            }
+          ]
+        },
+        "demo_recording_url": "TODO: the walkthrough video's URL",
+        "commerce": false,
+        "commerce_description": "agenticom does not sell anything through this plugin and processes no payments in it."
+      },
+      "publication": {
+        "release_notes": "First release."
+      }
+    }
+  }
+}

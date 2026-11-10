@@ -1,0 +1,22 @@
+{
+  "name": "webzai-labs",
+  "owner": {
+    "name": "Amir Gabay",
+    "email": "support@traileo.app"
+  },
+  "metadata": {
+    "description": "Plugins for traileo and agenticom: each connects an agent to the product's remote MCP server and teaches it where to start."
+  },
+  "plugins": [
+    {
+      "name": "traileo",
+      "source": "traileo",
+      "description": "Read and act on traileo feedback — recorded web-page observations with their evidence attached."
+    },
+    {
+      "name": "agenticom",
+      "source": "agenticom",
+      "description": "Publish, read and share planning specs on agenticom."
+    }
+  ]
+}

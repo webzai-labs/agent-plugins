@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "traileo": {
+      "type": "http",
+      "url": "https://traileo.app/mcp"
+    }
+  }
+}

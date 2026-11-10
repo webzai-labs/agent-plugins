@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "agenticom": {
+      "type": "streamable-http",
+      "url": "https://agenticom.app/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            }
+          }
+        }
+      }
+    }
+  }
+}

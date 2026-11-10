@@ -1,0 +1,26 @@
+{
+  "name": "traileo",
+  "displayName": "Traileo",
+  "version": "1.0.0",
+  "description": "Read and act on traileo feedback — recorded observations about web pages (a defect, a UX or copy note) with the evidence somebody captured: DOM, video, steps, network, console and screenshots.",
+  "author": {
+    "name": "Amir Gabay",
+    "email": "support@traileo.app"
+  },
+  "homepage": "https://traileo.app/docs/connect",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "feedback",
+    "bug-reports",
+    "qa",
+    "web",
+    "mcp"
+  ],
+  "skills": "skills/*",
+  "mcpServers": {
+    "traileo": {
+      "url": "https://traileo.app/mcp"
+    }
+  }
+}

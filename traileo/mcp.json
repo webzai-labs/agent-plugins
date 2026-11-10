@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "traileo": {
+      "type": "streamable-http",
+      "url": "https://traileo.app/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            }
+          }
+        }
+      }
+    }
+  }
+}

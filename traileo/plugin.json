@@ -1,0 +1,101 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "traileo",
+  "version": "1.0.0",
+  "description": "Read and act on traileo feedback — recorded observations about web pages (a defect, a UX or copy note) with the evidence somebody captured: DOM, video, steps, network, console and screenshots.",
+  "author": {
+    "name": "Amir Gabay",
+    "email": "support@traileo.app",
+    "url": "https://traileo.app"
+  },
+  "homepage": "https://traileo.app/docs/connect",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/traileo/SKILL.md",
+      "interface": {
+        "displayName": "Traileo",
+        "shortDescription": "Act on recorded web feedback",
+        "longDescription": "traileo records an observation about a web page — a defect, a UX or design suggestion, a copy or accessibility note — together with the evidence captured with it: the page itself, a video, the steps, network and console activity, and screenshots. This plugin connects the agent to the traileo MCP server as the signed-in user, so it can read a feedback and its evidence, comment on it, triage and assign it, file a new one, and manage the projects and workspaces that hold them — refused exactly where the traileo web app would refuse that user.",
+        "developerName": "Amir Gabay",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Read a feedback and the evidence recorded with it",
+          "Comment on, triage and assign feedback",
+          "File a new feedback with images and captures",
+          "Manage projects, labels, sites and access rules",
+          "Manage workspace collaborators and groups"
+        ],
+        "websiteURL": "https://traileo.app",
+        "supportURL": "https://traileo.app/contact",
+        "privacyPolicyURL": "https://traileo.app/privacy",
+        "termsOfServiceURL": "https://traileo.app/terms",
+        "defaultPrompt": [
+          "What are the newest open feedbacks in my traileo project?",
+          "Read this traileo feedback and tell me what went wrong.",
+          "Which traileo feedbacks are assigned to me?"
+        ],
+        "brandColor": "#E11D2A",
+        "brandColorDark": "#E11D2A",
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "List the user's projects",
+              "prompt": "Which traileo projects do I have?",
+              "tools_triggered": "list_projects",
+              "expected_behavior": "Lists the projects the signed-in user can reach, with their workspace."
+            },
+            {
+              "description": "List a project's feedback",
+              "prompt": "Show me the newest feedback in my Demo Shop project on traileo.",
+              "tools_triggered": "list_projects, list_feedbacks",
+              "expected_behavior": "Finds the project, then lists its feedback newest first with title, status and author."
+            },
+            {
+              "description": "Read one feedback and its evidence",
+              "prompt": "Open the traileo feedback about the checkout button and tell me what went wrong.",
+              "tools_triggered": "list_feedbacks, get_feedback",
+              "expected_behavior": "Reads the feedback with its recorded evidence (steps, console, network) and summarises the problem."
+            },
+            {
+              "description": "Feedback assigned to me",
+              "prompt": "Which traileo feedbacks are assigned to me?",
+              "tools_triggered": "list_my_assigned_feedbacks",
+              "expected_behavior": "Lists the feedback assigned to the signed-in user across projects."
+            },
+            {
+              "description": "Comment on a feedback",
+              "prompt": "Add a comment on that traileo feedback saying the fix is in review.",
+              "tools_triggered": "add_comment",
+              "expected_behavior": "Adds the comment as the signed-in user and confirms it was posted."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unrelated request",
+              "prompt": "What's the weather in Tel Aviv tomorrow?"
+            },
+            {
+              "description": "Generic coding question with no traileo context",
+              "prompt": "How do I reverse a list in Python?"
+            },
+            {
+              "description": "Feedback in a different product",
+              "prompt": "Show me my open GitHub issues."
+            }
+          ]
+        },
+        "demo_recording_url": "TODO: the walkthrough video's URL",
+        "commerce": false,
+        "commerce_description": "traileo does not sell anything through this plugin and processes no payments in it."
+      },
+      "publication": {
+        "release_notes": "First release."
+      }
+    }
+  }
+}

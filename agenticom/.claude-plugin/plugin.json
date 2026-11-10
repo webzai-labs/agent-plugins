@@ -1,0 +1,19 @@
+{
+  "name": "agenticom",
+  "displayName": "Agenticom",
+  "version": "1.0.0",
+  "description": "Publish, read and share planning specs on agenticom — pages composed of the planning kit, versioned and reviewed in the open.",
+  "author": {
+    "name": "Amir Gabay",
+    "email": "support@agenticom.app",
+    "url": "https://agenticom.app"
+  },
+  "homepage": "https://agenticom.app/docs/connecting-to-agenticom",
+  "license": "MIT",
+  "keywords": [
+    "planning",
+    "specs",
+    "design",
+    "mcp"
+  ]
+}
