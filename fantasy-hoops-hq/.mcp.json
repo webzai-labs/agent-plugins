@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fantasy-hoops-hq": {
+      "type": "http",
+      "url": "https://fantasyhoopshq.com/chatgpt/mcp"
+    }
+  }
+}

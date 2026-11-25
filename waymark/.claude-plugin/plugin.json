@@ -1,0 +1,21 @@
+{
+  "name": "waymark",
+  "displayName": "Waymark",
+  "version": "1.0.0",
+  "description": "Search the long-distance walking routes published on Waymark, read a route day by day with the stages, distances and stops its page states, and save a shared trip.",
+  "author": {
+    "name": "Amir Gabay",
+    "email": "hello@waymarkroutes.com",
+    "url": "https://waymarkroutes.com/"
+  },
+  "homepage": "https://waymarkroutes.com/",
+  "license": "MIT",
+  "keywords": [
+    "hiking",
+    "walking",
+    "trails",
+    "travel",
+    "mcp"
+  ],
+  "privacyPolicyUrl": "https://waymarkroutes.com/privacy"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "fantasy-hoops-hq",
+  "displayName": "Fantasy Hoops HQ",
+  "version": "1.0.0",
+  "description": "Fantasy basketball help from Fantasy Hoops HQ: the site's guides, NBA player lines and schedule counts, and, signed in, your saved leagues, roster, matchup planner and trade tools.",
+  "author": {
+    "name": "Amir Gabay",
+    "email": "support@fantasyhoopshq.com",
+    "url": "https://fantasyhoopshq.com/"
+  },
+  "homepage": "https://fantasyhoopshq.com/",
+  "license": "MIT",
+  "keywords": [
+    "fantasy-basketball",
+    "nba",
+    "fantasy-sports",
+    "sports",
+    "mcp"
+  ],
+  "privacyPolicyUrl": "https://fantasyhoopshq.com/privacy/"
+}
