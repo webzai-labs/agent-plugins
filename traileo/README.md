@@ -22,7 +22,7 @@ to paste a token or a password.
 
 | Client | How |
 |---|---|
-| Claude Code | `/plugin marketplace add <this repository>` then `/plugin install traileo@webzai-labs` |
+| Claude Code | `/plugin marketplace add <this repository>` then `/plugin install traileo-feedback@webzai-labs` |
 | Claude (web, desktop) | Settings → Connectors → Add custom connector → `https://traileo.app/mcp` |
 | Cursor | Install from the Cursor marketplace, or add `{"mcpServers": {"traileo": {"url": "https://traileo.app/mcp"}}}` to `mcp.json` |
 | ChatGPT | Install the traileo plugin from the ChatGPT directory |
