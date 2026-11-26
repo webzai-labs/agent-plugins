@@ -9,7 +9,7 @@
   },
   "plugins": [
     {
-      "name": "traileo",
+      "name": "traileo-feedback",
       "source": "./traileo",
       "description": "Read and act on traileo feedback: recorded web-page observations with their evidence attached."
     },
