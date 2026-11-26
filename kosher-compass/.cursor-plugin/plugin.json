@@ -1,0 +1,26 @@
+{
+  "name": "kosher-compass",
+  "displayName": "Kosher Compass",
+  "version": "1.0.0",
+  "description": "Search the kosher restaurants, groceries, synagogues and city guides published on Kosher Compass, each with its certifier and verification status, read its day by day vacations, and save a shared trip your group answers questions on.",
+  "author": {
+    "name": "Amir Gabay",
+    "email": "support@kosher-compass.com"
+  },
+  "homepage": "https://kosher-compass.com/en/",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "kosher",
+    "travel",
+    "trip-planning",
+    "restaurants",
+    "mcp"
+  ],
+  "skills": "skills/*",
+  "mcpServers": {
+    "kosher-compass": {
+      "url": "https://kosher-compass.com/chatgpt/mcp"
+    }
+  }
+}

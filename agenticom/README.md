@@ -3,12 +3,12 @@
 Connects your agent to [agenticom](https://agenticom.app), where the specs a planning session
 produces are published as versioned artifacts with reviews. With it, the agent can read the publishing
 flow and the planning kit's documentation, upload a draft and see what the build checked, publish it
-as the next version, and read and manage the projects, workspaces and specs you can reach — always as
+as the next version, and read and manage the projects, workspaces and specs you can reach, always as
 you.
 
 ## What it contains
 
-- **The agenticom MCP server**, `https://agenticom.app/mcp` — remote, Streamable HTTP. Nothing runs
+- **The agenticom MCP server**, `https://agenticom.app/mcp`, remote, Streamable HTTP. Nothing runs
   on your machine.
 - **An `agenticom` skill** that tells the agent where to start and what to confirm with you first.
 

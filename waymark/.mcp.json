@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "waymark": {
+      "type": "http",
+      "url": "https://waymarkroutes.com/chatgpt/mcp"
+    }
+  }
+}

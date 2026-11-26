@@ -5,18 +5,33 @@
     "email": "support@traileo.app"
   },
   "metadata": {
-    "description": "Plugins for traileo and agenticom: each connects an agent to the product's remote MCP server and teaches it where to start."
+    "description": "Plugins for traileo, agenticom, Kosher Compass, Waymark and Fantasy Hoops HQ: each connects an agent to the product's remote MCP server and teaches it where to start."
   },
   "plugins": [
     {
       "name": "traileo",
       "source": "traileo",
-      "description": "Read and act on traileo feedback — recorded web-page observations with their evidence attached."
+      "description": "Read and act on traileo feedback: recorded web-page observations with their evidence attached."
     },
     {
       "name": "agenticom",
       "source": "agenticom",
       "description": "Publish, read and share planning specs on agenticom."
+    },
+    {
+      "name": "kosher-compass",
+      "source": "kosher-compass",
+      "description": "Search the kosher restaurants, groceries, synagogues and city guides published on Kosher Compass, each with its certifier and verification status, read its day by day vacations, and save a shared trip your group answers questions on."
+    },
+    {
+      "name": "waymark",
+      "source": "waymark",
+      "description": "Search the long-distance walking routes published on Waymark, read a route day by day with the stages, distances and stops its page states, and save a shared trip."
+    },
+    {
+      "name": "fantasy-hoops-hq",
+      "source": "fantasy-hoops-hq",
+      "description": "Fantasy basketball help from Fantasy Hoops HQ: the site's guides, NBA player lines and schedule counts, and, signed in, your saved leagues, roster, matchup planner and trade tools."
     }
   ]
 }

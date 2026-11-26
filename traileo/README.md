@@ -1,14 +1,14 @@
 # traileo plugin
 
-Connects your agent to [traileo](https://traileo.app) — recorded observations about web pages (a
+Connects your agent to [traileo](https://traileo.app), recorded observations about web pages (a
 defect, a UX or copy note) with the evidence captured alongside them: the page, a video, the steps,
 the network and console activity, and screenshots. With it, the agent can read a feedback and its
 evidence, comment on it, triage and assign it, file a new one, and manage the projects and workspaces
-that hold them — always as you, and refused exactly where the traileo web app would refuse you.
+that hold them, always as you, and refused exactly where the traileo web app would refuse you.
 
 ## What it contains
 
-- **The traileo MCP server**, `https://traileo.app/mcp` — remote, Streamable HTTP. Nothing runs on
+- **The traileo MCP server**, `https://traileo.app/mcp`, remote, Streamable HTTP. Nothing runs on
   your machine.
 - **A `traileo` skill** that tells the agent where to start and what to confirm with you first.
 

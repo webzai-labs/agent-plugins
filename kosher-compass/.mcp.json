@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kosher-compass": {
+      "type": "http",
+      "url": "https://kosher-compass.com/chatgpt/mcp"
+    }
+  }
+}
