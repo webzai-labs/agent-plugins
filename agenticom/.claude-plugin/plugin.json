@@ -1,6 +1,6 @@
 {
-  "name": "agenticom",
-  "displayName": "Agenticom",
+  "name": "agenticom-specs",
+  "displayName": "Agenticom Specs",
   "version": "1.0.0",
   "description": "Publish, read and share planning specs on agenticom: pages composed of the planning kit, versioned and reviewed in the open.",
   "author": {
@@ -9,6 +9,7 @@
     "url": "https://agenticom.app"
   },
   "homepage": "https://agenticom.app/docs/connecting-to-agenticom",
+  "repository": "https://github.com/webzai-labs/agent-plugins",
   "license": "MIT",
   "keywords": [
     "planning",
