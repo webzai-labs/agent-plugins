@@ -14,7 +14,7 @@
       "description": "Read and act on traileo feedback: recorded web-page observations with their evidence attached."
     },
     {
-      "name": "agenticom",
+      "name": "agenticom-specs",
       "source": "agenticom",
       "description": "Publish, read and share planning specs on agenticom."
     },

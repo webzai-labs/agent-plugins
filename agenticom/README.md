@@ -22,7 +22,7 @@ password.
 
 | Client | How |
 |---|---|
-| Claude Code | `/plugin marketplace add <this repository>` then `/plugin install agenticom@webzai-labs` |
+| Claude Code | `/plugin marketplace add <this repository>` then `/plugin install agenticom-specs@webzai-labs` |
 | Claude (web, desktop) | Settings → Connectors → Add custom connector → `https://agenticom.app/mcp` |
 | Cursor | Install from the Cursor marketplace, or add `{"mcpServers": {"agenticom": {"url": "https://agenticom.app/mcp"}}}` to `mcp.json` |
 | ChatGPT | Install the agenticom plugin from the ChatGPT directory |
